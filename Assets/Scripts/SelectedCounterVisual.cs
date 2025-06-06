@@ -8,8 +8,8 @@ public class SelectedCounterVisual : MonoBehaviour
     // kiểu Player phát ra chọn counter, xong cái bên này nó nhận cái event đó
     // và nó lại còn phải check xem là cái counter chọn đấy nó là counter nào???
     // thì mới tác động cái visual selected lên. Hơi rối nha.
-    [SerializeField] private ClearCounter clearCounter;
-    [SerializeField] private GameObject visualGameObject;
+    [SerializeField] private BaseCounter baseCounter;
+    [SerializeField] private GameObject[] visualGameObjectArray;
 
     // Start is called before the first frame update
     private void Start()
@@ -18,7 +18,7 @@ public class SelectedCounterVisual : MonoBehaviour
     }
 
     private void Player_OnSelectedCounterChange(object sender, Player.OnSelectedCounterChangeEventArgs e) {
-        if (e.selectedCounter == clearCounter) {
+        if (e.selectedCounter == baseCounter) {
             Show();
         } else {
             Hide();
@@ -26,10 +26,14 @@ public class SelectedCounterVisual : MonoBehaviour
     }
 
     private void Show() {
-        visualGameObject.SetActive(true);
+        foreach(GameObject visualGameObject in visualGameObjectArray) {
+            visualGameObject.SetActive(true);
+        }
     }
 
     private void Hide() {
-        visualGameObject.SetActive(false);
+        foreach (GameObject visualGameObject in visualGameObjectArray) {
+            visualGameObject.SetActive(false);
+        }
     }
 }

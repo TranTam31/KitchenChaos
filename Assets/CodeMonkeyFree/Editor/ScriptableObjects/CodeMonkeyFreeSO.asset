@@ -14,36 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1748967153
+  lastShownTimestamp: 1749180064
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1748967153
+  checkedLastUpdateTimestamp: 1749180064
   lastQOTDResponse:
-    questionId: 187
-    questionText: 'Is this valid code?
-
-      <p>Vector3? targetPosition = new Vector3(10,
-      0, 0);</p>
-
-      <p>Vector3 moveToPosition = targetPosition;</p>'
-    answerA: Yes
-    answerB: No
-    answerC: 
+    questionId: 188
+    questionText: What is the purpose of a namespace?
+    answerA: To confuse you
+    answerB: Better performance
+    answerC: Keep your code organized
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1748967153
+  lastQotdTimestamp: 1749180064
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/ultimateOverview70_6FreeUpdate.png
     topText: Learn how to use 70 Tools and Features! (Unity 6 Updated)
     topLink: ultimateunityoverview
     bottomText: My 10+ Years of C# Knowledge in 1 Course!
     bottomLink: csharpcourse
-  lastDynamicHeaderTimestamp: 1748967153
+  lastDynamicHeaderTimestamp: 1749180064
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1748967153
+  websiteLatestMessageTimestamp: 1749180064
   websiteLatestVideos:
     videos:
     - youTubeId: U5Wolv65yK8
@@ -55,4 +50,4 @@ MonoBehaviour:
         Update)
     - youTubeId: 29ejb-nzO1A
       title: Is Schedule I a LOW EFFORT Game?
-  websiteLatestVideosTimestamp: 1748967153
+  websiteLatestVideosTimestamp: 1749180064
