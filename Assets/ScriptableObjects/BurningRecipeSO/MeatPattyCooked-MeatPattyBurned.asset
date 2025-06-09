@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34413877a41c887459d1c52d9a9c5cb5, type: 3}
-  m_Name: Cabbage-CabbageSlices
+  m_Script: {fileID: 11500000, guid: f18e951fef5bc104aaa457e0568a0882, type: 3}
+  m_Name: MeatPattyCooked-MeatPattyBurned
   m_EditorClassIdentifier: 
-  input: {fileID: 11400000, guid: af906c9a729f84f4c9fbb62341290c2f, type: 2}
-  output: {fileID: 11400000, guid: 8ec1eb1887dc7bf4a995fb86101e90f3, type: 2}
-  cuttingProgressMax: 5
+  input: {fileID: 11400000, guid: 609481f87091abe45a1806d3c2a56688, type: 2}
+  output: {fileID: 11400000, guid: 69b3ff906705d7042b04cf878a648e28, type: 2}
+  burningTimerMax: 5
