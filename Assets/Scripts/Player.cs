@@ -9,6 +9,8 @@ public class Player : MonoBehaviour, IKitchenObjectParent
     // cái này chính là Singleton Pattern nha
     public static Player Instance { get; private set; }
 
+    public event EventHandler OnPickedSomething;
+
     // cái này là event phát đi về việc counter nào được chọn nha
     public event EventHandler<OnSelectedCounterChangeEventArgs> OnSelectedCounterChange;
     public class OnSelectedCounterChangeEventArgs : EventArgs {
@@ -128,6 +130,9 @@ public class Player : MonoBehaviour, IKitchenObjectParent
 
     public void SetKitchenObject(KitchenObject kitchenObject) {
         this.kitchenObject = kitchenObject;
+        if(kitchenObject != null) {
+            OnPickedSomething?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     public KitchenObject GetKitchenObject() {
